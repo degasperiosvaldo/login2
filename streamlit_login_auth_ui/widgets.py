@@ -147,7 +147,7 @@ class __login__:
             st.markdown("###")
             sign_up_submit_button = st.form_submit_button(label = 'Register')
 
-            if sign_up_submit_button:
+            if sign_up_submit_button == True:
                 if valid_name_check == False:
                     st.error("Please enter a valid name!")
 
