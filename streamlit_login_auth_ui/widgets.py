@@ -170,7 +170,6 @@ class __login__:
                                 register_new_usr(name_sign_up, email_sign_up, username_sign_up, password_sign_up)
                                 st.success("Registration Successful!")
 
-
     def forgot_password(self) -> None:
         """
         Creates the forgot password widget and after user authentication (email), triggers an email to the user 
