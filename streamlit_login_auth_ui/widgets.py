@@ -143,7 +143,7 @@ class __login__:
             unique_username_check = check_unique_usr(username_sign_up)
 
             password_sign_up = st.text_input("Password *", placeholder = 'Create a strong password', type = 'password')
-
+            sign_up_submit_button == False
             st.markdown("###")
             sign_up_submit_button = st.form_submit_button(label = 'Register')
 
