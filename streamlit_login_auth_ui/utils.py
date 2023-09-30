@@ -1,4 +1,4 @@
-import re
+eimport re
 import json
 from trycourier import Courier
 import secrets
@@ -119,7 +119,7 @@ def register_new_usr(name_sign_up: str, email_sign_up: str, username_sign_up: st
     """
     Saves the information of the new user in the _secret_auth.json file.
     """
-    new_usr_data = {'Usuário': username_sign_up, 'nome': name_sign_up, 'email': email_sign_up, 'senha': ph.hash(password_sign_up)}
+    new_usr_data = {'username': username_sign_up, 'name': name_sign_up, 'email': email_sign_up, 'password': ph.hash(password_sign_up)}
 
     with open("_secret_auth_.json", "r") as auth_json:
         authorized_user_data = json.load(auth_json)
